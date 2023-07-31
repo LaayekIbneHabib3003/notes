@@ -1,3 +1,7 @@
 export default function AllNotes() {
-  return <></>;
+  return (
+    <>
+      <h1>All Notes</h1>
+    </>
+  );
 }
