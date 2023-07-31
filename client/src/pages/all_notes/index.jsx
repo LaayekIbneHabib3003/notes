@@ -1,3 +1,8 @@
 export default function AllNotes() {
-  return <></>;
+  return (
+    <>
+      <span></span>
+      <span></span>
+    </>
+  );
 }
