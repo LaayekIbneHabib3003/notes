@@ -1,10 +1,8 @@
 // ext
 import { Avatar } from "@mui/material";
-import { useLocation } from "react-router-dom";
 import { deepOrange } from "@mui/material/colors";
 
 // int
-import routes from "../../routes/routes";
 import { useStateContext } from "../../context";
 import {
   Info,
@@ -19,16 +17,8 @@ import {
   CheckList,
 } from "./style";
 
-export default function Header() {
+export default function Header({ caption }) {
   const { setSidenavOpen } = useStateContext();
-
-  const location = useLocation();
-  const path = location.pathname;
-
-  let caption = "";
-  for (let i = 0; i < routes.length; i++) {
-    caption += path === routes[i].route ? routes[i].name : "";
-  }
 
   return (
     <>

@@ -32,14 +32,35 @@ export const Crate = styled(Box)(({ sidenavopen, theme }) => ({
 
 export const Case = styled(Box)(({ theme }) => ({
   ":nth-of-type(1)": {
-    height: "4rem",
     width: "100%",
+    height: "4rem",
   },
 
   ":nth-of-type(2)": {
-    height: "calc(100% - 4rem)",
     width: "100%",
-    borderTop: `1px solid ${theme.palette.tertiary.main}`,
+    height: "calc(100% - 9rem)",
     background: theme.palette.primary.main,
+    borderTop: `1px solid ${theme.palette.tertiary.main}`,
+  },
+
+  ":nth-of-type(3)": {
+    width: "100%",
+    height: "5rem",
+    borderTop: `1px solid ${theme.palette.tertiary.main}`,
+  },
+}));
+
+export const Pack = styled(Box)(({ theme }) => ({
+  ":nth-of-type(1)": {
+    width: "25rem",
+    height: "100%",
+
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+    },
+  },
+
+  ":nth-of-type(2)": {
+    width: "100%",
   },
 }));
