@@ -9,10 +9,10 @@ export const Layout = ({ children }) => {
 
   return (
     <Container>
-      <Crate sidenavopen={sidenavOpen.toString()}>
+      <Crate sidenavopen={sidenavOpen ? 1 : 0}>
         <SideNav />
       </Crate>
-      <Crate sidenavopen={sidenavOpen.toString()}>
+      <Crate sidenavopen={sidenavOpen ? 1 : 0}>
         <Case>
           <Header />
         </Case>
