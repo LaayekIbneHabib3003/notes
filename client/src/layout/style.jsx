@@ -7,14 +7,14 @@ export const Container = styled(Box)(({}) => ({
   display: "flex",
 }));
 
-export const Crate = styled(Box)(({ sidenavOpen, theme }) => ({
+export const Crate = styled(Box)(({ sidenavopen, theme }) => ({
   height: "100%",
   display: "flex",
   flexDirection: "column",
 
   ":nth-of-type(1)": {
     height: "100%",
-    width: sidenavOpen ? "20rem" : "",
+    width: sidenavopen ? "20rem" : "",
 
     [theme.breakpoints.down("md")]: {
       width: "unset",
@@ -22,7 +22,7 @@ export const Crate = styled(Box)(({ sidenavOpen, theme }) => ({
   },
 
   ":nth-of-type(2)": {
-    width: sidenavOpen ? "calc(100% - 20rem)" : "100%",
+    width: sidenavopen ? "calc(100% - 20rem)" : "100%",
 
     [theme.breakpoints.down("md")]: {
       width: "100%",
