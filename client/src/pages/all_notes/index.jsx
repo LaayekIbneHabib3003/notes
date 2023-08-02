@@ -1,6 +1,8 @@
 // int
 import { useStateContext } from "../../context";
 import TextArea from "../../components/text_area";
+import { Container, Image } from "./style";
+import AlienSpaceship from "../../assets/images/alien spaceship-amico.svg";
 
 export default function AllNotes() {
   const { isClicked } = useStateContext();
@@ -8,7 +10,9 @@ export default function AllNotes() {
     <>
       {isClicked && (
         <>
-          <h1 style={{ color: "white", textAlign: "center", marginTop: "25%" }}>Nothing to show</h1>
+          <Container>
+            <Image src={AlienSpaceship} />
+          </Container>
         </>
       )}
       {!isClicked && (
