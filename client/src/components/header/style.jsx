@@ -55,7 +55,10 @@ export const Burger = styled(MenuIcon)(({ theme }) => ({
   fontSize: "medium",
 }));
 
-export const Caption = styled(Typography)(({ theme }) => ({}));
+export const Caption = styled(Typography)(({ theme }) => ({
+  width: "10rem",
+  textAlign: "center",
+}));
 
 export const Edit = styled(CreateOutlined)(({ theme }) => ({
   color: theme.palette.tertiary.main,

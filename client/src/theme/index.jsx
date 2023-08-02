@@ -53,6 +53,17 @@ const theme = createTheme({
       xl: 1536,
     },
   },
+
+  // components: {
+  //   MuiIconButton: {
+  //     styleOverrides: {
+  //       root: {
+  //         margin: 0,
+  //         padding: 0,
+  //       },
+  //     },
+  //   },
+  // },
 });
 
 export default theme;

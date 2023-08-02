@@ -38,6 +38,7 @@ export const Case = styled(Box)(({ theme }) => ({
 
   ":nth-of-type(2)": {
     width: "100%",
+    display: "flex",
     height: "calc(100% - 9rem)",
     background: theme.palette.primary.main,
     borderTop: `1px solid ${theme.palette.tertiary.main}`,
@@ -61,6 +62,11 @@ export const Pack = styled(Box)(({ theme }) => ({
   },
 
   ":nth-of-type(2)": {
-    width: "100%",
+    width: "calc(100% - 25rem)",
+    padding: "2rem",
+
+    [theme.breakpoints.down("md")]: {
+      display: "none",
+    },
   },
 }));

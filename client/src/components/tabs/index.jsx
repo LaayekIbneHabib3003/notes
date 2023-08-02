@@ -1,5 +1,3 @@
-// ext
-
 // int
 import { Container, Crate, Input, Search, Placeholder } from "./style";
 

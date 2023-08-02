@@ -1,6 +1,7 @@
 // ext
 import { Avatar } from "@mui/material";
 import { deepOrange } from "@mui/material/colors";
+import IconButton from "@mui/material/IconButton";
 
 // int
 import { useStateContext } from "../../context";
@@ -18,7 +19,7 @@ import {
 } from "./style";
 
 export default function Header({ caption }) {
-  const { setSidenavOpen } = useStateContext();
+  const { setSidenavOpen, setIsClicked } = useStateContext();
 
   return (
     <>
@@ -26,7 +27,7 @@ export default function Header({ caption }) {
         <Crate>
           <Burger onClick={() => setSidenavOpen((prevState) => !prevState)} />
           <Caption variant="p">{caption}</Caption>
-          <Edit />
+          <Edit onClick={() => setIsClicked((prevState) => !prevState)} />
         </Crate>
         <Crate>
           <Screen />
